@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  dsjobapp:
+    # かめさんが用意した環境を利用
+    image: "datascientistus/ds-python-env3"
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./work:/work
