@@ -3,8 +3,12 @@ version: "3.3"
 services:
   dsjobapp:
     # かめさんが用意した環境を利用
-    image: "datascientistus/ds-python-env3"
+    # image: "datascientistus/ds-python-env3"
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - "8888:8888"
+      - "8889:8888"
     volumes:
       - ./work:/work
+    working_dir: /work
