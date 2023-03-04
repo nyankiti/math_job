@@ -1,4 +1,5 @@
-FROM datascientistus/ds-python-env3
+# かめさんが用意した環境を利用
+FROM datascientistus/ds-python-env4
 RUN sudo apt-get install zip -y
 RUN pip install kaggle
 COPY kaggle.json root/.kaggle/

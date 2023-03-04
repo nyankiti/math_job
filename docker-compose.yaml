@@ -2,11 +2,11 @@ version: "3.3"
 
 services:
   dsjobapp:
-    # かめさんが用意した環境を利用
-    # image: "datascientistus/ds-python-env3"
     build:
       context: .
       dockerfile: Dockerfile
+    # イメージ名を指定
+    image: math-ml-env
     ports:
       - "8889:8888"
     volumes:
